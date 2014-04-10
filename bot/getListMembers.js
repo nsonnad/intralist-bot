@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// Get a clean array of all members on list
+// Get a clean array of all members on list, and save it to db for later
 
 var _ = require('lodash');
 var async = require('async');
@@ -14,7 +14,7 @@ var db = index.db;
 
 var cursor = -1;
 
-function getNewMembers (fetchedMembers, dbIDs) {
+function getNewMembers (fetchedMembers) {
   db.all('select id from members', function (err, ids) {
     dbIDs = _.pluck(ids, 'id');
     var dbInsert = db.prepare('insert or replace into members ("id", "screen_name") values (?, ?)');

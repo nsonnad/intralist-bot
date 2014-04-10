@@ -1,4 +1,4 @@
-// Filesystem operations to load/save cached data and config
+// Controller that opens/creates db, loads config and logger
 
 var path = require('path');
 var fs = require('fs');
