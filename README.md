@@ -1,9 +1,9 @@
 ##Intralist Bot
 
-This is a Node.js-powered Twitter bot framework. Given a list, a bot created
-with it will identify and retweet all instances of one list member mentioning
-one or more other list members. A local list of the members, and a cache of past
-retweets, are saved in a SQLite database.
+This is a Node.js-powered Twitter bot template. Given a list, the bot identifies
+and retweets all instances of one list member mentioning
+one or more other list members. A list of the members, and a cache of past
+retweets, are saved in a local SQLite database.
 
 For an example, check out [diplomatwee](https://twitter.com/diplomatwee), a bot that retweets any time one
 world leader mentions another.  
@@ -26,5 +26,7 @@ Now you can do the following:
 At this point, your bot works locally and is ready to be deployed to a server.
 For a free and flexible solution, I suggest giving
 [ScraperWiki](https://scraperwiki.com/) a try.
+
+
 
 
