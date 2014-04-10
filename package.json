@@ -1,0 +1,26 @@
+{
+  "name": "diplomatwee",
+  "version": "0.0.0",
+  "description": "A bot that retweets any instance of world leaders interacting on twitter",
+  "main": "index.js",
+  "scripts": {
+    "setup": "mv _config.json config.json && npm install",
+    "getListMembers": "node ./bot/getListMembers.js",
+    "tweetMentions": "node ./bot/tweetMentions.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter",
+    "diplomacy",
+    "politics"
+  ],
+  "author": "Nikhil Sonnad",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^0.6.2",
+    "lodash": "^2.4.1",
+    "npmlog": "0.0.6",
+    "sqlite3": "^2.2.0",
+    "twit": "^1.1.12"
+  }
+}
