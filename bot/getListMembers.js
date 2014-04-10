@@ -15,7 +15,7 @@ var dbInsert = db.prepare('insert or replace into members ("id", "screen_name") 
 
 var cursor = -1;
 
-function getNewMembers (fetchedMembers, dbIDs) {
+function getNewMembers (fetchedMembers) {
   db.all('select id from members', function (err, ids) {
     dbIDs = _.pluck(ids, 'id');
     async.each(fetchedMembers, function (resItem, callback) {
